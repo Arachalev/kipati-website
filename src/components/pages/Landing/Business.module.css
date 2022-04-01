@@ -1,0 +1,15 @@
+
+.business
+{
+    @apply bg-white font-cabin flex flex-col gap-8 text-center justify-center py-12
+}
+
+.business h3
+{
+    @apply font-bold text-[2rem] text-[#4F414F]
+}
+
+.icons
+{
+    @apply flex justify-center gap-32
+}

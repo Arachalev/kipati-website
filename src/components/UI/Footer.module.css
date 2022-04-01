@@ -1,0 +1,88 @@
+
+.footer
+{
+    @apply text-white font-cabin pt-12 pb-6  bg-gradient-to-r from-[#22182b] to-[#1e2d42] to-[#17536c]
+     
+}
+
+.footerContainer
+{
+    @apply px-12 flex gap-16  justify-between
+}
+
+.footerIntro
+{
+    @apply flex flex-col gap-4 w-[22rem]
+}
+
+.footerIntro img
+{
+    @apply h-[53px] w-[145px]
+}
+.icons
+{
+    @apply flex gap-4 text-2xl
+}
+
+.footerLinks
+{
+    @apply flex flex-col gap-4 
+}
+.footerLinks h3
+{
+    @apply font-bold text-4xl
+}
+
+.footerUl
+{
+    @apply flex flex-col gap-3 
+}
+.footerUl li
+{
+    @apply mt-2
+}
+
+.footerInsights
+{
+    @apply flex flex-col gap-4
+}
+
+.footerInsights h3
+{
+    @apply text-4xl font-bold
+}
+
+.footerInsights h4{
+    @apply text-2xl font-semibold
+}
+
+.subscribe
+{
+    @apply flex gap-0
+}
+.subscribe input
+{
+    @apply w-[20rem] bg-transparent px-4 py-3 rounded-tl-md rounded-bl-md border border-l border-r-0 border-t border-b
+}
+.subscribe button
+{
+    @apply bg-links text-[#231123] py-3 px-6 text-lg rounded-tr-md rounded-br-md 
+}
+
+.privacy
+{
+    @apply px-12 mt-4
+}
+
+.footer hr
+{
+    @apply mt-4
+}
+.privacy ul
+{
+    @apply flex gap-4
+}
+/* .footerIntro p
+{
+    @apply
+} */

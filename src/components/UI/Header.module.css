@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+nav
+{
+    @apply flex items-center justify-between bg-black/5  backdrop-blur-sm px-20 h-20 font-cabin
+}
+.logo
+{
+    @apply w-36 h-12
+}
+
+.links
+{
+    @apply -ml-60
+}
+.links ul
+{
+    @apply flex gap-10 
+}
+.links li
+{
+    @apply text-white font-bold text-lg 
+}
+
+.login
+{
+    @apply  flex gap-10 text-white 
+}
+.log
+{
+    @apply px-6 py-2 border-white border  rounded-md 
+}
+
+
+ 

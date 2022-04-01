@@ -1,0 +1,35 @@
+
+.littleMore
+{
+    @apply flex gap-8 items-center px-12   bg-[#D3CFD3] h-[50rem]
+}
+
+
+.images
+{
+    @apply relative flex w-[90rem] pl-10
+}
+
+.mainImg
+{
+    @apply absolute -left-8 top-36 z-10   
+}
+
+.mainImg img
+{
+    @apply h-[348px] w-[448px]
+}
+
+.message{
+    @apply flex flex-col gap-6
+}
+
+.message h2
+{
+    @apply text-[#231123] text-5xl  font-bold
+}
+
+.message p
+{
+    @apply text-[#231123] text-lg
+}

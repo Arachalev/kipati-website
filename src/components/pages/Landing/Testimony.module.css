@@ -1,0 +1,30 @@
+
+.testimony
+{
+    @apply bg-[#E5E5E5] py-16
+}
+.testimony h2
+{
+    @apply font-bold  text-5xl text-center text-[#4F414F]
+}
+
+ 
+
+/*chrome safari and opera*/
+.testimonyContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.testimonyContainer{
+    -ms-overflow-style: none; /* IE and Edge*/
+    scrollbar-width: none; /*firefox*/
+}
+
+ 
+
+.testimonyContainer
+{
+    @apply flex gap-8   w-full overflow-x-auto py-8
+}
+
+

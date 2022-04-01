@@ -1,0 +1,39 @@
+
+.single
+{
+    @apply bg-white p-8 min-w-[24rem] rounded-lg 
+}
+
+.details
+{
+    @apply flex gap-4 items-center
+}
+
+.details img
+{
+    @apply rounded-full
+}
+
+.name h4
+{
+    @apply text-[#231123] font-bold  
+}
+
+.name p
+{
+    @apply text-[#BDB8BD] 
+}
+
+.quote
+{
+    @apply flex gap-4 mt-12
+}
+
+.quote img
+{
+    @apply h-5 w-24
+}
+.quote p
+{
+    @apply text-[#231123] text-lg font-semibold
+}

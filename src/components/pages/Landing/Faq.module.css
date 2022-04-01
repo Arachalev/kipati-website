@@ -1,0 +1,20 @@
+
+
+.faq
+{
+    @apply bg-[#E5E5E5] pt-8 pb-14
+}
+
+.faqH2
+{
+    @apply text-[#4F414F] font-bold text-5xl text-center
+}
+
+.faqContainer
+{
+    @apply flex flex-col  gap-8 items-center mt-12
+}
+.questionContainer
+{
+    @apply flex gap-6
+}

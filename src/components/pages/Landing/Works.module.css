@@ -1,0 +1,61 @@
+.singleWorks
+{
+    @apply w-[24rem] h-[23rem]  pt-12 bg-white flex flex-col gap-8 text-center rounded-lg 
+}
+.singleWorks h3
+{
+    @apply font-bold text-[2rem] text-[#4F414F]
+}
+
+.singleWorks img
+{
+    @apply h-[80px] w-[80px] self-center
+ }
+
+.singleWorks p
+{
+    @apply text-[#231123] text-base
+}
+
+.worksContainer
+{
+    @apply flex gap-8 justify-center
+}
+
+.works
+{
+    @apply bg-[#E5E5E5] h-fit pt-12 pb-20  px-14
+}
+.worksH2
+{
+    @apply text-[3rem] text-[#4F414F] text-center  mb-4
+}
+
+.plans
+{
+    @apply flex gap-8 mt-32
+}
+
+.missed 
+{
+    @apply text-left 
+}
+
+.missed h2
+{
+    @apply text-[#231123] font-bold text-[3rem] leading-tight
+}
+.missed p
+{
+    @apply text-[#231123] text-lg
+}
+
+.reminders
+{
+    @apply relative w-[100rem] flex items-center
+}
+
+.topImg
+{
+    @apply absolute z-10 right-0 w-[20rem]
+}

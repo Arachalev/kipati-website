@@ -1,0 +1,46 @@
+.contactUs
+{
+    @apply flex justify-between items-center p-20 bg-[#E9E7E9] 
+}
+
+.questions
+{
+    @apply flex flex-col gap-8
+}
+.questions h2
+{
+    @apply text-[#231123] font-bold text-4xl
+}
+
+.questions p
+{
+    @apply text-[#231123] text-lg
+}
+
+
+.form
+{
+    @apply bg-hero
+}
+
+.form form
+{
+    @apply w-[31rem]  p-10 text-white flex flex-col gap-6
+}
+
+.inputContainer
+{
+    @apply flex flex-col
+}
+
+.inputContainer input
+{
+    @apply rounded-xl bg-transparent border py-2 px-4
+}
+
+.inputContainer textarea
+{
+    @apply rounded-xl bg-transparent border py-2 px-4 h-32
+
+
+}

@@ -1,0 +1,76 @@
+ 
+ 
+
+.create{
+    @apply font-cabin bg-hero bg-no-repeat bg-cover  flex items-center  overflow-clip 
+}
+ 
+.account
+{
+    @apply flex flex-col bg-bg  py-12 px-20  w-[42rem] h-5/6 my-12 ml-16
+}
+
+.account h3
+{
+    @apply font-bold text-4xl text-center
+}
+
+.formContainer
+{
+    @apply flex flex-col  gap-6
+}
+
+.formInput
+{
+    @apply flex flex-col 
+}
+
+.formInput label
+{
+    @apply font-bold text-lg 
+}
+
+.formInput input
+{
+    @apply  py-2 px-4 border border-black border-solid rounded-lg 
+}
+
+.privacy
+{
+    @apply mt-4   
+}
+
+.create a
+{
+    @apply  text-links 
+}
+
+ 
+
+.alternative
+{
+    @apply flex flex-col mt-8 gap-4
+} 
+
+.alternative h4
+{
+    @apply font-bold text-center text-3xl
+}
+.alternative button
+{
+    @apply bg-white w-full py-3 rounded-md flex gap-4 align-baseline justify-center text-xl
+}
+.alternative p
+{
+    @apply font-bold text-lg
+}
+
+.kipati
+{
+    @apply flex flex-col gap-8 p-8 w-[40rem]
+}
+
+.kipati h3
+{
+    @apply font-bold text-5xl text-white   
+}

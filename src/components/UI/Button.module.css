@@ -1,0 +1,11 @@
+
+
+.dots img
+{
+    @apply  absolute top-0 object-fill -z-0
+}
+.button
+{
+    @apply relative text-white bg-gradient-to-r from-black to-links   rounded-md   overflow-clip font-cabin
+}
+ 

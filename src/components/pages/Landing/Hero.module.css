@@ -1,0 +1,42 @@
+
+
+.hero
+{
+    @apply bg-hero h-screen
+}
+.main
+{
+    @apply flex 
+}
+.intro
+{
+    @apply flex flex-col gap-8 text-bg px-12 mt-28
+}
+
+.intro h1
+{
+    @apply font-bold text-6xl
+}
+.intro p
+{
+    @apply text-lg
+}
+
+.buttonContainer
+{
+    @apply flex gap-8 justify-start
+}
+
+.buttonContainer .button
+{
+    @apply w-48 h-14 border border-white rounded-md
+}
+
+.img  
+{
+    @apply h-[40rem] w-[80rem] -mt-12
+}
+
+.img img
+{@apply h-full w-full
+}
