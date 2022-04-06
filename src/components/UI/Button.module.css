@@ -6,6 +6,6 @@
 }
 .button
 {
-    @apply relative text-white bg-gradient-to-r from-black to-links   rounded-md   overflow-clip font-cabin
+    @apply font-cabin relative text-white bg-gradient-to-r from-black to-links   rounded-md   overflow-clip font-cabin
 }
  

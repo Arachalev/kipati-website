@@ -7,6 +7,7 @@ interface ButtonProps{
     onClick?: React.MouseEventHandler<HTMLButtonElement>,
     text?: String,
     className?: String,
+    icon?:any
 
 
 }
@@ -19,7 +20,12 @@ const Button: FC<ButtonProps> = ( props) : JSX.Element =>{
               <span className={classes.dots}>
                 <img src={dots} />
               </span> 
+              <div className="flex  items-center gap-2">
+              {props.icon}
               {props.text}
+
+              </div>
+              
             </button>
     )
 }

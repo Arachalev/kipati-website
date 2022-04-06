@@ -1,0 +1,38 @@
+
+.menu
+{
+    @apply w-[257px] m-0 h-screen  bg-hero text-white fixed  top-0 flex flex-col  items-center justify-between py-6 font-cabin 
+}
+
+.logo
+{
+    @apply flex items-center gap-4
+}
+.logo img
+{
+    @apply w-[109px] h-[40px]  
+}
+
+.optionsContainer
+{
+    @apply flex flex-col gap-6
+}
+.options
+{
+    @apply flex gap-4 items-center font-bold text-lg
+}
+
+.optionsButton
+{
+    @apply flex items-center gap-4 font-bold text-lg
+}
+
+.goPremium
+{
+    @apply flex flex-col gap-4
+
+}
+.logOut
+{
+    @apply flex gap-4 text-lg
+}

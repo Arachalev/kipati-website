@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/pages/Landing/LandingPage";
 import Create from "./components/pages/Create/Create";
+import Pricing from "./components/pages/Pricing/Pricing"
+import Profile from "./components/pages/Profile/Profile"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +16,9 @@ ReactDOM.render(
         <Route path="/kipati" element={<App/>} >
         <Route path="home" element={<LandingPage />} />
         <Route path="create-account" element={<Create />} />
+        <Route path="pricing" element={<Pricing/>}/>
+        <Route path="profile" element={<Profile/>}/>
+
         </Route>        
       </Routes>
     </BrowserRouter>

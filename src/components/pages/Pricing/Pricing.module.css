@@ -1,0 +1,69 @@
+
+.pricing 
+{
+    @apply bg-hero h-screen font-cabin
+}
+
+.pricingHero{
+    @apply mt-40 flex flex-col gap-8 items-center
+}
+
+.pricingHero h2
+{
+    @apply text-[#F4F3F4] text-5xl font-bold
+}
+
+.pricingOptions ul
+{
+    @apply flex border rounded-md  w-fit 
+}
+.pricingOptions ul li
+{
+    @apply px-8 py-3 text-white
+}
+
+.prices
+{
+    @apply bg-[#E5E5E5] flex justify-center gap-8 items-end  
+}
+
+.pricingPlans
+{
+    @apply flex flex-col p-8 pb-12 w-[27rem] h-fit text-[#231123] bg-white rounded-md  -translate-y-40 first:-translate-y-[12rem]
+
+}
+.pricingPlans h4
+{
+    @apply font-bold text-3xl text-center
+}
+
+.pricingPlans h3
+{
+    @apply font-bold text-[2rem] 
+}
+.pricingPlans h3 span
+{
+    @apply font-normal 
+}
+.pricingCurrency
+{
+    @apply flex  self-end items-center
+}
+
+.pricingLogo
+{
+    @apply self-center 
+}
+.perksContainer{
+    @apply flex flex-col gap-8 mt-8 text-lg
+}
+
+.pricingPerks
+{
+    @apply flex justify-between
+}
+.pricingButton
+{
+    @apply px-8 py-2 border border-[#231123]  rounded-md font-semibold text-lg mt-8
+}
+ 

@@ -1,0 +1,44 @@
+.profile
+{
+    @apply   relative bg-[#F4F3F4] font-cabin pl-[25rem] -z-10 pt-40
+}
+.profileContainer
+{
+    @apply   z-20 bg-white  p-8 rounded-md
+}
+.ProfileIntro
+{
+    @apply flex gap-4  items-center mb-8
+}
+.profileImage 
+{
+    @apply rounded-full overflow-hidden
+}
+.ProfileIntro h4
+{
+    @apply text-lg 
+}
+.ProfileIntro p
+{
+    @apply text-[#A7A0A7]  text-[14px]
+}
+
+.profileInfoContainer
+{
+    @apply flex flex-col gap-8
+}
+
+.benefits
+{
+    @apply flex gap-16 w-[415px]  bg-[#F4F3F4] rounded-2xl p-4
+}
+.benefits span
+{
+    @apply flex items-center gap-2  
+}
+
+
+.benefits p
+{
+    @apply text-[#918891] 
+}

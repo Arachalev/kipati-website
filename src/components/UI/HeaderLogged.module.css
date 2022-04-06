@@ -1,0 +1,27 @@
+
+
+.header
+{
+    @apply flex fixed w-screen justify-between pl-64 pr-20 bg-hero items-center py-4
+}
+
+.profile
+{
+    @apply flex gap-8 text-white   items-center
+}
+.notification
+{
+    @apply relative
+}
+.notification span
+{
+    @apply  absolute top-0 right-0  text-center  bg-gradient-to-r from-black to-links   w-[26px] h-[26px] rounded-full items-center m-0
+}
+.profileInfo h4
+{
+    @apply font-bold
+}
+.profileImage img
+{
+    @apply rounded-full w-[3rem]
+}

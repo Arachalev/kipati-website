@@ -1,0 +1,32 @@
+
+.profileInfo
+{
+    @apply flex w-[415px] justify-between bg-[#F4F3F4]  rounded-2xl p-4 font-cabin
+}
+.info
+{
+    @apply flex flex-col  gap-5  
+}
+
+
+.info p
+{
+    @apply text-[#918891] text-sm
+}
+
+.info h4
+{
+    @apply text-[#231123]  font-semibold
+}
+
+
+
+.profileInfo button
+{
+    @apply self-end rounded-xl bg-[#BDB8BD] text-white w-[114px] py-2 h-fit 
+}
+
+.benefits
+{
+    @apply flex w-[415px]
+}
