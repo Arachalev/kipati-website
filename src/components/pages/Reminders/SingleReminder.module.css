@@ -1,0 +1,35 @@
+.singleReminder
+{
+    @apply flex gap-8  bg-[#E5E5E5] px-6 py-2 rounded-lg  min-w-full justify-between 
+}
+
+.singleReminder h4
+{
+    @apply font-bold
+}
+.reminderDetails
+{
+    @apply flex flex-col gap-4   
+}
+.sentReminder
+{
+    @apply w-[15rem] overflow-ellipsis whitespace-nowrap overflow-hidden
+}
+.reminderStatus
+{
+    @apply flex flex-col justify-center gap-4
+}
+.reminderActions
+{
+    @apply flex gap-4
+}
+
+.reminderIcons
+{
+    @apply hover:cursor-pointer
+}
+
+.status
+{
+    @apply text-center text-sm font-thin px-1 py-1  text-white rounded-md 
+}

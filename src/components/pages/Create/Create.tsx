@@ -42,7 +42,7 @@ const Create = () => {
             </a>
             .
           </p>
-          <Button type="submit" text="Create Account" className=" mt-8 py-3 w-full"/>
+          <Button type="submit" text="Create Account" className={classes.importedButton}/>
         </form>
         <div className={classes.alternative}>
           <h4>OR</h4>

@@ -8,6 +8,7 @@ import LandingPage from "./components/pages/Landing/LandingPage";
 import Create from "./components/pages/Create/Create";
 import Pricing from "./components/pages/Pricing/Pricing"
 import Profile from "./components/pages/Profile/Profile"
+import Reminders from "./components/pages/Reminders/Reminders"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path="create-account" element={<Create />} />
         <Route path="pricing" element={<Pricing/>}/>
         <Route path="profile" element={<Profile/>}/>
+        <Route path="reminders" element={<Reminders/>}/>
 
         </Route>        
       </Routes>

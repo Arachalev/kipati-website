@@ -74,3 +74,12 @@
 {
     @apply font-bold text-5xl text-white   
 }
+
+.importedButton
+{
+    @apply  mt-8 mx-auto py-3 w-full text-center
+}
+.importedButton div
+{
+    @apply text-center w-fit self-center mx-auto
+}

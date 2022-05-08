@@ -1,10 +1,10 @@
 .profile
 {
-    @apply   relative bg-[#F4F3F4] font-cabin pl-[25rem] -z-10 pt-40
+    @apply w-[calc(100vw_-_257px)] pt-40 ml-[257px] justify-center   relative bg-[#F4F3F4] font-cabin flex -z-10  
 }
 .profileContainer
 {
-    @apply   z-20 bg-white  p-8 rounded-md
+    @apply     bg-white w-[55rem]  p-8 rounded-md flex justify-between 
 }
 .ProfileIntro
 {
@@ -41,4 +41,21 @@
 .benefits p
 {
     @apply text-[#918891] 
+}
+
+.info
+{
+    @apply bg-[#F4F3F4] rounded-2xl p-12 mt-28 
+}
+.infoDetails
+{
+    @apply flex flex-col gap-2
+}
+.infoDetails button
+{
+    @apply rounded-md  bg-[#BDB8BD] w-fit py-2 px-10 text-white
+}
+.infoDetails hr
+{
+    @apply py-[1rem]
 }

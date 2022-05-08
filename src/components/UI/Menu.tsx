@@ -1,6 +1,6 @@
 import classes from "./Menu.module.css";
-import logo from "../../assets/images/kipati2.svg";
-import { AiOutlineMenu } from "react-icons/ai";
+// import logo from "../../assets/images/kipati2.svg";
+// import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlinePoweroff } from "react-icons/ai";
 import { MdDashboard } from "react-icons/md";
 import { BsAlarm } from "react-icons/bs";
@@ -10,12 +10,12 @@ import Button from "./Button";
 const Menu = () => {
   return (
     <div className={classes.menu}>
-      <div className={classes.logo}>
+      {/* <div className={classes.logo}>
         <AiOutlineMenu className="text-2xl" /> 
         <span>
           <img src={logo} />
         </span>
-      </div>
+      </div> */}
       <div className={classes.optionsContainer}>
         <div className={classes.options}>
           <MdDashboard className="text-2xl text-links" /> <p>Dashboard</p>

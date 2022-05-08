@@ -1,0 +1,35 @@
+.paginationContainer{
+    @apply flex list-none
+}
+
+.paginationItem{
+    @apply px-[12px] h-8 text-center my-auto mx-[4px] text-[#000000de] flex items-center rounded-2xl leading-[1.43] text-base min-w-[32px] hover:bg-[#0000000a] hover:cursor-pointer 
+}
+
+.dots{
+    @apply hover:bg-transparent cursor-default
+}
+
+.selected{
+    @apply bg-[#00000014]
+}
+
+.arrow{
+    @apply before:relative before:content-[''] before:inline-block before:w-[0.4rem] before:h-[0.4rem] border-r-[#000000de] border-t-[#000000de]
+}
+
+.left{
+    @apply rotate-[-135deg] translate-x-[-50%]
+}
+.right{
+    @apply rotate-[45deg]
+}
+
+.disabled{
+    @apply pointer-events-none hover:cursor-default bg-transparent 
+}
+
+.disabled .arrow
+{
+    @apply border-r-[#0000006e] border-t-[#0000006e]
+}

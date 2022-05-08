@@ -1,0 +1,54 @@
+
+.remindersContainer
+{
+    @apply flex flex-col gap-12   w-[calc(100vw_-_257px)] pt-40 px-[10%] ml-[257px]   relative  bg-[#E5E5E5] min-h-screen
+}
+
+ 
+.remindersSearch
+{
+    @apply w-full   relative
+}
+
+.remindersSearch input
+{
+    @apply w-full py-2 pl-12  border border-gray-500 rounded-lg 
+}
+.search
+{
+    @apply text-gray-500 absolute top-3 ml-4
+}
+
+.sortContainer
+{
+    @apply w-full flex flex-col gap-4
+}
+.sortContainer hr
+{
+    @apply  h-[3px] bg-black
+}
+.sortReminders
+{
+    @apply flex justify-between w-full
+}
+.sortReminders h2
+{
+    @apply font-bold 
+}
+.sortSelector
+{
+    @apply flex items-center 
+}
+
+.allReminders
+{
+    @apply bg-white flex flex-col items-center p-8 rounded-lg min-h-[60vh]
+}
+.reminders
+{
+    @apply w-full mt-8 flex flex-col gap-4
+}
+.pagination
+{
+    @apply flex w-full justify-center min-h-[3rem] py-12 
+}

@@ -106,7 +106,7 @@ const Pricing = () => {
 
             </div>
           </div>
-          <Button className="px-8 py-3 text-white mt-8" text="Start for Free"></Button>
+          <Button className={classes.importedButton} text="Go Premium"></Button>
         </div>
       </div>
       <Footer />

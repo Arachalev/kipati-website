@@ -67,3 +67,11 @@
     @apply px-8 py-2 border border-[#231123]  rounded-md font-semibold text-lg mt-8
 }
  
+.importedButton
+{
+    @apply   px-8 py-3 text-white mt-8
+}
+.importedButton div
+{
+    @apply text-center w-fit self-center mx-auto
+}
