@@ -8,64 +8,11 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import Pagination from "../../UI/Pagination";
 import { useState, useMemo } from "react";
+import Search from "../../UI/Search";
+import {DUMMY_DATA} from "../../UI/DummyData"
 
 let pageSize = 10;
-const DUMMY_DATA = [
-  {
-    key: 1,
-    title: "Driver's License",
-    dueDate: "Sept. 14, 2022",
-    sentTo: "Samuel A. ,Claire I, FRSC Ikeja command, Lagos",
-    nextReminder: "Oct. 14, 2022",
-    status: "Due",
-    statusClass: "bg-blue-500 ",
-  },
-  {
-    key: 2,
-    title: "Driver's License",
-    dueDate: "Sept. 14, 2022",
-    sentTo: "Samuel A. ,Claire I, FRSC Ikeja command, Lagos",
-    nextReminder: "Oct. 14, 2022",
-    status: "Due",
-    statusClass: "bg-blue-500 ",
-  },
-  {
-    key: 3,
-    title: "Driver's License",
-    dueDate: "Sept. 14, 2022",
-    sentTo: "Samuel A. ,Claire I, FRSC Ikeja command, Lagos",
-    nextReminder: "Oct. 14, 2022",
-    status: "Due",
-    statusClass: "bg-blue-500 ",
-  },
-  {
-    key: 4,
-    title: "Driver's License",
-    dueDate: "Sept. 14, 2022",
-    sentTo: "Samuel A. ,Claire I, FRSC Ikeja command, Lagos",
-    nextReminder: "Oct. 14, 2022",
-    status: "Due",
-    statusClass: "bg-blue-500 ",
-  },
-  {
-    key: 5,
-    title: "Driver's License",
-    dueDate: "Sept. 14, 2022",
-    sentTo: "Samuel A. ,Claire I, FRSC Ikeja command, Lagos",
-    nextReminder: "Oct. 14, 2022",
-    status: "Due",
-    statusClass: "bg-blue-500 ",
-  },
-  {
-    key: 6,
-    title: "Driver's License",
-    dueDate: "Sept. 14, 2022",
-    sentTo: "Samuel A. ,Claire I, FRSC Ikeja command, Lagos",
-    nextReminder: "Oct. 14, 2022",
-    status: "Due",
-    statusClass: "bg-blue-500 ",
-  },
-];
+
 
 const Reminders = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -77,14 +24,11 @@ const Reminders = () => {
   }, [currentPage]);
 
   return (
-    <div>
+    <div className={classes.reminders}>
       <HeaderLogged />
 
       <div className={classes.remindersContainer}>
-        <div className={classes.remindersSearch}>
-          <BsSearch className={classes.search} />
-          <input type="text" placeholder="Search Here..." />
-        </div>
+        <Search/>
 
         <div className={classes.allReminders}>
           <div className={classes.sortContainer}>

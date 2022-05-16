@@ -1,0 +1,17 @@
+.notificationContainer
+{
+    @apply flex  gap-4  bg-[#F4F3F4] rounded-md py-3 px-6 w-full
+}
+
+.notificationInfo
+{
+    @apply flex flex-col gap-2  
+}
+.notificationInfo p
+{
+    @apply   w-[80%] text-gray-500 text-ellipsis whitespace-nowrap overflow-hidden
+}
+.notificationInfo h4
+{
+    @apply font-bold 
+}

@@ -1,0 +1,14 @@
+
+.remindersSearch
+{
+    @apply w-full   relative
+}
+
+.remindersSearch input
+{
+    @apply w-full py-2 pl-12  border border-gray-500 rounded-lg 
+}
+.search
+{
+    @apply text-gray-500 absolute top-3 ml-4
+}

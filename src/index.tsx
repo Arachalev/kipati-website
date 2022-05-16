@@ -9,6 +9,8 @@ import Create from "./components/pages/Create/Create";
 import Pricing from "./components/pages/Pricing/Pricing"
 import Profile from "./components/pages/Profile/Profile"
 import Reminders from "./components/pages/Reminders/Reminders"
+import Notifications from "./components/pages/Notifications/Notifications"
+import SetReminder from "./components/pages/SetReminders/SetReminder"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,7 +22,8 @@ ReactDOM.render(
         <Route path="pricing" element={<Pricing/>}/>
         <Route path="profile" element={<Profile/>}/>
         <Route path="reminders" element={<Reminders/>}/>
-
+        <Route path="notifications" element={<Notifications/>}/>
+        <Route path="set_reminder" element={<SetReminder/>} />
         </Route>        
       </Routes>
     </BrowserRouter>

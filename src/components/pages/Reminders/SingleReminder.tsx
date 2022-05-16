@@ -11,10 +11,11 @@ interface reminderProps{
     nextReminder?: string,
     status?: string,
     statusClass?:string,
+    children?:any
 }
 
 
-const SingleReminders:FC<reminderProps> = (props)=>{
+const SingleReminders  = (props:reminderProps)=>{
     const{title, dueDate,sentTo, nextReminder, status, statusClass}=props
     const statusClassName = `${statusClass} ${classes.status}`
     return(
@@ -31,6 +32,7 @@ const SingleReminders:FC<reminderProps> = (props)=>{
                 <div className={classes.reminderActions}><BiPencil className={classes.reminderIcons}/> <CgBox className={classes.reminderIcons}/> <RiDeleteBin6Line className={classes.reminderIcons}/>  </div>
                 <span className={statusClassName} >{status}</span>
             </div>
+             
 
         </div>
     )

@@ -1,0 +1,24 @@
+.notifications
+{
+    @apply max-w-[100vw] overflow-hidden
+}
+
+.notificationContainer
+{
+ 
+    @apply flex flex-col gap-12   w-[calc(100vw_-_257px)] pt-40 px-[10%] ml-[257px]   relative  bg-[#E5E5E5] min-h-screen 
+ 
+}
+.allNotifications
+{
+    @apply bg-white rounded-lg p-8 flex flex-col gap-12
+}
+
+.allNotifications hr
+{
+    @apply  p-[1px] bg-gradient-to-tr from-black to-blue-700 
+}
+.notifications
+{
+    @apply flex flex-col gap-4
+}
