@@ -1,0 +1,10 @@
+.amountForm input
+{
+    @apply border border-[#4F414F] rounded-md py-2 px-4 outline-none
+
+}
+
+.select
+{
+    @apply w-[3rem]
+}

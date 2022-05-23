@@ -1,7 +1,23 @@
-.formContainer form
+ 
+.formContainer .forms
 {
-    @apply flex justify-between p-8 bg-white
+    @apply flex justify-between py-20 px-[3rem] gap-36 bg-white rounded-md
 
+}
+
+.leftForm
+{
+    @apply  w-[50%] 
+}
+.leftFormContainer
+{
+    @apply flex flex-col gap-4 
+}
+
+
+.rightForm
+{
+    @apply  w-[50%] pr-[3rem] flex flex-col gap-4
 }
 
 

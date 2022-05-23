@@ -1,0 +1,94 @@
+/* .recipientsContainer
+{
+    @apply flex flex-col
+     
+} */
+ 
+.data
+{
+    @apply flex justify-between p-3 mb-2 bg-[#4F414F] text-white rounded-md
+}
+.dataIcon
+{
+    @apply text-2xl 
+}
+.dataDetails
+{
+    @apply flex flex-col gap-2
+}
+ 
+.addRecipientsContainer
+{
+    @apply flex flex-col align-baseline gap-2 mb-2
+}
+
+.addRecipients
+{
+    @apply flex justify-between items-center
+}
+.addRecipients p
+{
+    @apply text-gray-500
+}
+.plus
+{
+    @apply flex gap-2 items-center
+}
+.addIcon
+{
+    @apply  text-white p-2 rounded-lg text-lg bg-gradient-to-tr from-gray-700 to-links hover:cursor-pointer
+}
+.SubmitIcon
+{
+    @apply  text-white p-2 w-fit rounded-lg text-lg bg-gradient-to-tr from-gray-700 to-links hover:cursor-pointer absolute -right-14 bottom-0
+}
+.label
+{
+    @apply flex 
+}
+.label label
+{
+    @apply font-semibold
+}
+.important
+{
+    @apply text-red-600 text-[0.5rem]   
+}
+
+.csv
+{
+    @apply text-[12px]
+}
+
+.inputContainer
+{
+    @apply bg-[#F4F3F4] p-4 rounded-md
+}
+.inputTitle
+{
+    @apply flex justify-between items-baseline mb-3
+}
+.inputTitle h4
+{
+    @apply text-[#231123]
+}
+.inputTitle p
+{
+    @apply text-gray-500 text-[12px]
+}
+.mainInputContainer
+{
+    @apply flex flex-col gap-3 relative
+}
+.inputControl
+{
+    @apply flex border  border-[#231123] rounded-md px-4 py-2
+}
+.inputControl label
+{
+    @apply text-[#231123] min-w-fit
+}
+.inputControl input
+{
+    @apply   border-none outline-none bg-inherit w-fit  pl-4 
+}
