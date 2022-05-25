@@ -11,6 +11,7 @@ import Profile from "./components/pages/Profile/Profile"
 import Reminders from "./components/pages/Reminders/Reminders"
 import Notifications from "./components/pages/Notifications/Notifications"
 import SetReminder from "./components/pages/SetReminders/SetReminder"
+import Dashboard from "./components/pages/Dashboard/Dashboard";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route path="profile" element={<Profile/>}/>
         <Route path="reminders" element={<Reminders/>}/>
         <Route path="notifications" element={<Notifications/>}/>
+        <Route path = "dashboard" element={<Dashboard/>} />
         <Route path="set_reminder" element={<SetReminder/>} />
         </Route>        
       </Routes>

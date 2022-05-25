@@ -20,7 +20,7 @@ const Button: FC<ButtonProps> = ( props) : JSX.Element =>{
               <span className={classes.dots}>
                 <img src={dots} />
               </span> 
-              <div className="flex  items-center gap-2">
+              <div className="flex justify-center items-center gap-2">
               {props.icon}
               {props.text}
 

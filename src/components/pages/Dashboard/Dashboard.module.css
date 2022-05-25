@@ -1,0 +1,4 @@
+.dashboardContainer 
+{ 
+    @apply flex flex-col gap-12   w-[calc(100vw_-_257px)] pt-40 px-[3%] ml-[257px]   relative  bg-[#E5E5E5] min-h-screen 
+}

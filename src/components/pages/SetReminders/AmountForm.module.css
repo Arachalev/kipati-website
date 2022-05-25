@@ -1,10 +1,26 @@
-.amountForm input
-{
-    @apply border border-[#4F414F] rounded-md py-2 px-4 outline-none
-
+.amountForm input {
+  @apply border border-[#4F414F] rounded-md  px-4 outline-none;
+}
+.amountForm input::-webkit-outer-spin-button,
+.amountForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.select
+ 
+.amountInput 
 {
-    @apply w-[3rem]
+  @apply flex justify-between py-2 px-4 border border-[#231123] rounded-md 
 }
+.amountInput input
+{
+  @apply border-0 
+}
+/* .select {
+  @apply rounded-md w-fit bg-gradient-to-r from-gray-500 to-blue-500  text-links
+} */
+
+ .select
+ {
+   color:   rgb(0, 215, 255);
+ }

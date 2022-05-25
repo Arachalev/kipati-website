@@ -11,13 +11,13 @@
 }
 .leftFormContainer
 {
-    @apply flex flex-col gap-4 
+    @apply flex flex-col gap-10 
 }
 
 
 .rightForm
 {
-    @apply  w-[50%] pr-[3rem] flex flex-col gap-4
+    @apply  w-[50%] pr-[3rem] flex flex-col gap-10
 }
 
 
