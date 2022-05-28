@@ -1,0 +1,30 @@
+.remindersContainer
+{
+    @apply bg-white p-8 rounded-md flex flex-col gap-4
+}
+
+.sortContainer
+{
+    @apply w-full flex flex-col gap-4
+}
+.sortContainer hr
+{
+    @apply  h-[3px] bg-black
+}
+.sortReminders
+{
+    @apply flex justify-between w-full
+}
+.sortReminders h2
+{
+    @apply font-bold 
+}
+.sortSelector
+{
+    @apply flex items-center 
+}
+
+.allreminders
+{
+    @apply flex flex-col gap-4
+}

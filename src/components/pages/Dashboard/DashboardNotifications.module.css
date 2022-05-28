@@ -1,0 +1,12 @@
+.notificationsContainer
+{
+    @apply flex flex-col w-full
+}
+.header 
+{
+    @apply font-bold text-xl  
+}
+.allNotifications
+{
+    @apply flex flex-col gap-4 w-full
+}

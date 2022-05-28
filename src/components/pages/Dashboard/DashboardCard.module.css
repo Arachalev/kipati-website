@@ -1,0 +1,27 @@
+.cardContainer
+{
+    @apply flex flex-col gap-4 bg-white rounded-md w-fit px-8 py-6
+}
+
+.amount
+{
+    @apply flex gap-4
+}
+
+.amount h2
+{
+    @apply text-5xl text-[#4F414F]
+}
+
+.amount p
+{
+    @apply text-[#4F414F]  w-[6rem]
+}
+.linksContainer hr
+{
+    @apply bg-gradient-to-tr from-gray-500 to-links p-[0.7px]
+}
+.link
+{
+    @apply flex gap-2 items-center text-links  hover:cursor-pointer  
+}

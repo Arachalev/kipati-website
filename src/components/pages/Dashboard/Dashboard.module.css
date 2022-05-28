@@ -1,4 +1,21 @@
 .dashboardContainer 
 { 
-    @apply flex flex-col gap-12   w-[calc(100vw_-_257px)] pt-40 px-[3%] ml-[257px]   relative  bg-[#E5E5E5] min-h-screen 
+    @apply flex  gap-12   w-[calc(100vw_-_257px)] pt-40 px-[3%] ml-[257px]   relative  bg-[#E5E5E5] min-h-screen 
+}
+
+.search
+{
+    @apply flex flex-col gap-4
+}
+.cards
+{
+    @apply flex gap-4
+}
+.leftDashboard
+{
+    @apply flex flex-col gap-4 w-2/3
+}
+.rightDashboard
+{
+    @apply w-1/3
 }

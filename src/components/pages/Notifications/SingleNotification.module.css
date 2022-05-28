@@ -5,13 +5,17 @@
 
 .notificationInfo
 {
-    @apply flex flex-col gap-2  
+    @apply flex flex-col gap-2 w-full 
 }
 .notificationInfo p
 {
-    @apply   w-[80%] text-gray-500 text-ellipsis whitespace-nowrap overflow-hidden
+    @apply   max-w-[80%] text-gray-500 text-ellipsis whitespace-nowrap overflow-hidden
 }
 .notificationInfo h4
 {
     @apply font-bold 
+}
+.check
+{
+    @apply  min-w-[2rem] max-h-[2rem] rounded-[50%] bg-white flex justify-center items-center
 }
