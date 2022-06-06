@@ -1,7 +1,8 @@
 .reminders
 {
-    @apply max-w-[100vw] overflow-hidden
+    @apply max-w-[100vw] overflow-hidden  mt-0 w-full  flex flex-col gap-4
 }
+ 
 .remindersContainer
 {
     @apply flex flex-col gap-12   w-[calc(100vw_-_257px)]  pt-40 px-[10%] ml-[257px]   relative  bg-[#E5E5E5] min-h-screen
@@ -32,12 +33,9 @@
 
 .allReminders
 {
-    @apply bg-white flex flex-col items-center p-8 rounded-lg min-h-[60vh]
+    @apply bg-white flex flex-col gap-6 items-center p-8 rounded-lg min-h-[60vh]
 }
-.reminders
-{
-    @apply w-full mt-8 flex flex-col gap-4
-}
+
 .pagination
 {
     @apply flex w-full justify-center min-h-[3rem] py-12 

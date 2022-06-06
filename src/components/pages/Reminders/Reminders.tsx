@@ -9,13 +9,31 @@ import { IoIosArrowForward } from "react-icons/io";
 import Pagination from "../../UI/Pagination";
 import { useState, useMemo } from "react";
 import Search from "../../UI/Search";
-import {DUMMY_DATA} from "../../UI/DummyData"
+import { DUMMY_DATA } from "../../UI/DummyData";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../../../store/store";
 
 let pageSize = 10;
 
-
 const Reminders = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const reminderData = useSelector(
+    (state: RootState) => state.reminders.reminder
+  );
+
+  const allReminders =  reminderData.map((reminder) => {
+    return (
+      <SingleReminders
+        key={reminder.key}
+        title={reminder.title}
+        dueDate={reminder.dueDate}
+        sentTo={reminder.sentTo}
+        nextReminder={reminder.nextReminder}
+        status={reminder.status}
+        statusClass={reminder.statusClass}
+      />
+    );
+  })
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
@@ -26,10 +44,8 @@ const Reminders = () => {
   return (
     <div className={classes.reminders}>
       <HeaderLogged />
-
       <div className={classes.remindersContainer}>
-        <Search/>
-
+        <Search />
         <div className={classes.allReminders}>
           <div className={classes.sortContainer}>
             <div className={classes.sortReminders}>
@@ -42,30 +58,18 @@ const Reminders = () => {
           </div>
 
           <div className={classes.reminders}>
-            {currentTableData.map((reminder) => {
-              return (
-                <SingleReminders
-                  key={reminder.key}
-                  title={reminder.title}
-                  dueDate={reminder.dueDate}
-                  sentTo={reminder.sentTo}
-                  nextReminder={reminder.nextReminder}
-                  status={reminder.status}
-                  statusClass={reminder.statusClass}
-                />
-              );
-            })}
+            { allReminders}
           </div>
           {/* <div className={classes.remindersPagination}> */}
-            <Pagination
-              className={classes.pagination}
-              currentPage={currentPage}
-              totalCount={DUMMY_DATA.length}
-              pageSize={pageSize}
-              onPageChange={(page: number) => {
-                setCurrentPage(page);
-              }}
-            />
+          <Pagination
+            className={classes.pagination}
+            currentPage={currentPage}
+            totalCount={DUMMY_DATA.length}
+            pageSize={pageSize}
+            onPageChange={(page: number) => {
+              setCurrentPage(page);
+            }}
+          />
           {/* </div> */}
         </div>
       </div>

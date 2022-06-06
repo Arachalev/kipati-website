@@ -9,8 +9,7 @@ import './App.css'
 // import { Fragment } from 'react';
 
 function App() {
-  return (
-    <Fragment>
+  return (    
       <div className='App'>
         {/* <Header /> */}
         {/* <HeaderLogged/> */}
@@ -19,7 +18,7 @@ function App() {
 
         {/* <Footer/> */}
       </div>
-    </Fragment>
+    
   );
 }
 

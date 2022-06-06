@@ -1,19 +1,23 @@
 import classes from "./DashboardNotifications.module.css";
 import SingleNotification from "../Notifications/SingleNotification";
-import { DUMMY_DATA2 } from "../../UI/DummyData";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../store/store";
 
-const allNotifications = DUMMY_DATA2.map((item) => (
-  <SingleNotification
+
+
+
+const DashboardNotifications = () => {
+  const notificationsData = useSelector((state:RootState)=>state.notification.notification)
+  const allNotifications = notificationsData.map((item) => (
+    <SingleNotification
     key={item.key}
     title={item.title}
     text={item.text}
     time={item.time}
     headerClass="text-[14px]"
     textClass="text-[12px]"
-  />
-));
-
-const DashboardNotifications = () => {
+    />
+    ));
   return (
     <div className={classes.notificationsContainer}>
       <h4 className={classes.header}>Latest Notifications</h4>

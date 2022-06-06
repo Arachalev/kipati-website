@@ -17,5 +17,5 @@
 }
 .rightDashboard
 {
-    @apply w-1/3
+    @apply w-1/3 flex flex-col gap-8 bg-white p-8
 }

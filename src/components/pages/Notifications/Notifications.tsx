@@ -1,12 +1,15 @@
 import Search from "../../UI/Search";
 import HeaderLogged from "../../UI/HeaderLogged";
 import classes from "./Notifications.module.css";
-import { Fragment } from "react";
 import SingleNotification from "./SingleNotification";
-import { DUMMY_DATA2 } from "../../UI/DummyData";
+import { RootState, AppDispatch } from "../../../store/store";
+import { useSelector } from "react-redux";
 
 const Notifications = () => {
-  const allNotifications = DUMMY_DATA2.map((item) => (
+  const notificationsData = useSelector(
+    (state: RootState) => state.notification.notification
+  );
+  const allNotifications = notificationsData.map((item) => (
     <SingleNotification
       title={item.title}
       time={item.time}
@@ -21,16 +24,14 @@ const Notifications = () => {
         <Search />
         <div className={classes.allNotifications}>
           <div>
-          <h4>All Notifications</h4>
-          <hr />
+            <h4>All Notifications</h4>
+            <hr />
           </div>
-          
-          <div className={classes.notifications}>
-            {allNotifications}
-          </div>
+
+          <div className={classes.notifications}>{allNotifications}</div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
