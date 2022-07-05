@@ -14,6 +14,7 @@ import SetReminder from "./components/pages/SetReminders/SetReminder";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
 import store from "./store/store";
 import { Provider } from "react-redux";
+import SearchComponent from "./components/UI/SearchComponent"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -35,6 +36,7 @@ ReactDOM.render(
           <Route path="notifications" element={<Notifications />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="set_reminder" element={<SetReminder />} />
+          <Route path="search" element={<SearchComponent />} />
         </Route>
       </Routes>
     </BrowserRouter>

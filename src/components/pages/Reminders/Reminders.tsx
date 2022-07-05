@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import classes from "./Reminders.module.css";
 import HeaderLogged from "../../UI/HeaderLogged";
 import Menu from "../../UI/Menu";
@@ -17,11 +18,12 @@ let pageSize = 10;
 
 const Reminders = () => {
   const [currentPage, setCurrentPage] = useState(1);
+
   const reminderData = useSelector(
     (state: RootState) => state.reminders.reminder
   );
 
-  const allReminders =  reminderData.map((reminder) => {
+  const loadReminders = reminderData.map((reminder) => {
     return (
       <SingleReminders
         key={reminder.key}
@@ -33,7 +35,30 @@ const Reminders = () => {
         statusClass={reminder.statusClass}
       />
     );
-  })
+  });
+
+
+  const [allReminders, setAllReminders] = useState(loadReminders);
+
+
+  const filteredReminders = (reminderData: any) => {
+    const finalReminders = reminderData.map((reminder: any) => {
+      return (
+        <SingleReminders
+          key={reminder.key}
+          title={reminder.title}
+          dueDate={reminder.dueDate}
+          sentTo={reminder.sentTo}
+          nextReminder={reminder.nextReminder}
+          status={reminder.status}
+          statusClass={reminder.statusClass}
+        />
+      );
+    });
+
+    setAllReminders(finalReminders);
+    console.log(allReminders);
+  };
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
@@ -45,7 +70,7 @@ const Reminders = () => {
     <div className={classes.reminders}>
       <HeaderLogged />
       <div className={classes.remindersContainer}>
-        <Search />
+        <Search inputData={reminderData} filteredData={filteredReminders} />
         <div className={classes.allReminders}>
           <div className={classes.sortContainer}>
             <div className={classes.sortReminders}>
@@ -58,7 +83,7 @@ const Reminders = () => {
           </div>
 
           <div className={classes.reminders}>
-            { allReminders}
+            {allReminders}
           </div>
           {/* <div className={classes.remindersPagination}> */}
           <Pagination
